@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .logo img {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+  }
+  
+.nav__links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.link a {
+    padding: 0 1rem;
+    color: #0d213f;
+    transition: 0.3s;
+}
+
+.link a:hover {
+    color: #3685fb;
+}
+
+@media (max-width: 768px) {
+
+    .nav__links {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .nav__links.active {
+        display: flex;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        margin: auto;
+        background-color: #fff;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+        border-radius: 0.5rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+        animation: slideDown 2s ease-in-out; 
+    }
+}
+.btn1 {
+    border: 2px solid #3685fb;
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    font-size: 1.1rem;
+}
+
+.btn1:hover {
+    background-color: #3685fb; 
+    color: white; 
+}
+  
+
+  
+  .hero-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+  }
+  
+  .hero-section h1 {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  
+  .hero-section h2 {
+    font-size: 4rem;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .hero-section p {
+    font-size: 2.2rem;
+    color: #555;
+    margin: 20px 0;
+  }
+  
+  .cta-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
